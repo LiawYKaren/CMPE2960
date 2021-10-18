@@ -1,8 +1,342 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+/**********************************************************************/
+/*HTML tags*/
+/**********************************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Hind&family=PT+Mono&family=Potta+One&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+html, body
+{
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
 }
 
-a {
-  color: #00B7FF;
+body 
+{ 
+    font-family: 'Hind', sans-serif;
+    font-size: x-large;
+    background-color: lightcyan;
+    
+    display: grid;   
+    grid-template-rows: 100px auto 75px;
+    grid-gap: 10px;
+    
 }
+a 
+{
+    color:white;
+}
+div, header, footer
+{
+    border-radius: 10px;
+}
+
+header 
+{
+    background-color: lightcyan;
+    color: navy;
+    font-family: 'Potta One', cursive;
+    font-size: smaller;
+    text-align: center;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+footer
+{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    background-color: navy;
+    color: lightcyan;
+    font-size: small;
+    padding: 10px;
+}
+
+/*************************************/
+/*Table = Home + NAIT*/
+/*************************************/
+table 
+{
+    font-family: 'PT Mono', monospace;
+    color: white;
+}
+table th, td
+{
+    width: 16%;
+    text-align: center;
+}
+table th 
+{
+    border: 2px solid white;
+    font-size: x-large;
+}
+table img 
+{
+    background-color: white;
+    height: 15vh;
+}
+table td:hover:not(.thTime)
+{
+    background-color: brown;
+}
+
+
+/*************************************/
+/*Form = Feedback*/
+/*************************************/
+   
+form div 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+form select 
+{
+    padding: 10px;
+}
+
+#Buttons input
+{
+    width: 90%;
+    margin-right: 15px;
+    height: 50px;
+    font-size: larger;
+}
+
+
+/*************************************/
+/*List = Home + Accomplishments + Employment*/
+/*************************************/
+
+/**********************************************************************/
+/*topnavMain*/
+/**********************************************************************/
+
+.topnavMain
+{
+    grid-row: 1;
+    grid-column: 1;
+  
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkolivegreen;
+
+    }
+    
+    
+    ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+    
+    ul.topnav li a:hover:not(.btnActive) {background-color:black;}
+    ul.topnav li .btnActive:hover {background-color: black;}
+    
+    ul.topnav li a.btnActive {background-color:brown;}
+    
+    
+    ul.topnav li.right, ul.topnav li {float: none;}
+
+    .subnav01 {
+        
+        float: left;
+        overflow: hidden;
+      }
+      .topnav i {
+          margin-top: 5px;
+      }
+      
+      .subnav01 .subnav01-btn {
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+      }
+      
+      
+      .subnav01-content {
+        display: none;
+        position: absolute;
+        background-color: olivedrab;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .subnav01-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      
+      .subnav01-content a:hover {
+        background-color: #ddd;
+      }
+      
+      .subnav01:hover .subnav01-content {
+        display: block;
+      }
+/**********************************************************************/
+/*sideMain*/
+/**********************************************************************/
+
+
+.sideMain
+{
+    grid-row: 3;
+    grid-column: 1;
+    background-color: white;
+    padding: 10px;
+    font-family: 'Caveat', cursive;
+}
+.sideMain img 
+{
+    margin: 5%;
+    width: 90%;
+    border-radius: 10px;
+}
+
+/**********************************************************************/
+/*main div*/
+/**********************************************************************/
+
+header, footer, .divMain
+{
+    border: 3px lightcyan solid;
+}
+
+
+.divMain
+{
+    background-color: black;
+    color: bisque;
+    padding: 10px;
+
+    
+    overflow: hidden;
+    white-space: nowrap; /* Don't forget this one */
+    text-overflow: ellipsis;
+}
+
+.divUnit 
+{
+    display: grid;
+}
+
+.divUnit h3
+{
+    text-align: center;
+    background-color: darkolivegreen;
+}
+
+.secPart2
+{
+}
+
+/**********************************************************************/
+/*specific classes and ids*/
+/**********************************************************************/
+
+.txtQuotes
+{
+    font-family: 'Caveat', cursive;
+}
+
+/*************************************/
+/*NAIT*/
+/*************************************/
+/*************************************/
+/*Accomplishment*/
+/*************************************/
+
+/*************************************/
+/*Employment*/
+/*************************************/
+/*************************************/
+/*Home = Grid Area*/
+/*************************************/
+/**********************************************************************/
+/*desktop view*/
+/**********************************************************************/
+@media only screen and (min-width: 900px)
+{
+    
+    /*************************************/
+    /*HTML tags*/
+    /*************************************/
+    body 
+    {
+        
+    }
+
+    header
+    {
+       
+    }
+
+    footer
+    {
+        
+    }
+    /*************************************/
+    /*Universal*/
+    /*************************************/
+
+    .sideMain
+    {
+    }
+
+    .divMain
+    {
+    }
+
+    .topnavMain
+    {
+    }
+    
+    ul.topnav li.right {float: right;}
+    ul.topnav li {float: left;}
+
+    /*************************************/
+    /*Home = Grid Area*/
+    /*************************************/
+    /*************************************/
+    /*Accomplishments*/
+    /*************************************/
+    
+    /*************************************/
+    /*NAIT*/
+    /*************************************/
+
+
+}
+
+
+/**********************************************************************/
+/*other*/
+/**********************************************************************/
+

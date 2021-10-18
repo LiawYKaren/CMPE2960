@@ -1,2 +1,27 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<header>AutoDOC Categories</header>
+<div class ="divMain">
+    
+    <form action ="/addCategories" method="POST">
+        <input type="text" placeholder="Category Name">
+        <input type="textbox" placeholder="Barcode features">
+        <input type="submit" value="Add Categories">
+    </form>
+    <div class ="divUnit">
+        <table id ="Categories">
+
+        </table>
+    </div>
+    <form action = "/startCategories" method="POST">
+
+        <input type = "submit" value ="Test Importing Pictures">
+        <input type="submit" value="Start Categorizing">
+    </form>
+    <div class ="divUnit" id="LogImage">
+        
+    </div>
+</div>
+<footer>&#169 AutoDOC<br>
+      <script>document.write('Last Modified: ' + document.lastModified);</script>
+      <br>
+      <a href = "/">Home</a>
+</footer>
