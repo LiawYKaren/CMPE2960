@@ -24,3 +24,20 @@ function CreateCategoryTable()
     console.log('Function = CreateCategoryTable');
 
 }
+
+
+$("#startCategories").on("submit", function () {
+    let getData = [];
+    $.ajax({
+        url: '/',
+        type: 'POST',
+        cache: false,
+        data:getData,
+        success: function (data) {
+            alert('Success!')
+        }
+        , error: function (jqXHR, textStatus, err) {
+            alert('text status ' + textStatus + ', err ' + err)
+        }
+    });
+  });

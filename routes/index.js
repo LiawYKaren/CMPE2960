@@ -5,8 +5,7 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'AutoDOC' });
 });
-
-router.post('/startCategories', function(req,res,next){
-  
-});
+// router.post('/startCategories', function(req, res, next) {
+//   res.render('index', { title: 'AutoDOC' });
+// });
 module.exports = router;
